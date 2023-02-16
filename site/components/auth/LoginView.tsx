@@ -59,6 +59,7 @@ const LoginView: React.FC = () => {
 
   return (
     <form
+      test-data="form"
       onSubmit={handleLogin}
       className="w-80 flex flex-col justify-between p-3"
     >
