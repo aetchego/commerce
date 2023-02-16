@@ -12,6 +12,7 @@ const Avatar: FC<Props> = ({}) => {
 
   return (
     <div
+      test-data="avatar"
       ref={ref}
       style={{ backgroundImage: userAvatar }}
       className="inline-block h-8 w-8 rounded-full border-2 border-primary hover:border-secondary focus:border-secondary transition-colors ease-linear"
