@@ -109,7 +109,7 @@ const ProductCard: FC<Props> = ({
             name={product.name}
             price={`${price} ${product.price?.currencyCode}`}
           />
-          <div className={s.imageContainer}>
+          <div className={s.imageContainer} data-test="product-img">
             {product?.images && (
               <Image
                 alt={product.name || 'Product Image'}

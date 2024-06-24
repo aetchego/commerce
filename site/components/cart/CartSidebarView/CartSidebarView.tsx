@@ -78,7 +78,7 @@ const CartSidebarView: FC = () => {
                 My Cart
               </Text>
             </Link>
-            <ul className={s.lineItemsList}>
+            <ul className={s.lineItemsList} data-test="cart-products">
               {data!.lineItems.map((item: any) => (
                 <CartItem
                   key={item.id}

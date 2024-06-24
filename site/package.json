@@ -9,7 +9,9 @@
     "analyze": "BUNDLE_ANALYZE=both next build",
     "lint": "next lint",
     "prettier-fix": "prettier --write .",
-    "find:unused": "npx next-unused"
+    "find:unused": "npx next-unused",
+    "cypress:open": "cypress open",
+    "cypress:run": "cypress run"
   },
   "sideEffects": false,
   "dependencies": {

@@ -68,7 +68,7 @@ const I18nWidget: FC = () => {
         </div>
         <div className="absolute top-0 right-0">
           {options?.length && display ? (
-            <div className={s.dropdownMenu}>
+            <div className={s.dropdownMenu} data-test="languages-container">
               <div className="flex flex-row justify-end px-6">
                 <button
                   onClick={() => setDisplay(false)}
@@ -80,7 +80,7 @@ const I18nWidget: FC = () => {
               </div>
               <ul>
                 {options.map((locale) => (
-                  <li key={locale}>
+                  <li key={locale} data-test="languages">
                     <Link
                       href={currentPath}
                       locale={locale}
